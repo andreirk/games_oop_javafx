@@ -70,7 +70,7 @@ public class Logic {
 
     public boolean isWin() {
         int[][] table = this.convert();
-        boolean result = false;
+        boolean result = MatrixCheck.isWin(table, 1);
         return result;
     }
 
