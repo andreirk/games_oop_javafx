@@ -18,6 +18,11 @@ public enum Cell {
         this.y = y;
     }
 
+    @Override
+    public String toString() {
+        return String.format("Cell - x: %s, y: %s", this.x, this.y);
+    }
+
     public static Cell findBy(int x, int y) {
         Cell rsl = null;
         for (Cell cell : values()) {
